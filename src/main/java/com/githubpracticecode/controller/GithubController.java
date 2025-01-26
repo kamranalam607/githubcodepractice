@@ -13,7 +13,7 @@ public class GithubController {
     //http://localhost:8080/api/githubcode/getUser
     @GetMapping("/getUser")
     public ResponseEntity<String> getUser() {
-        return new ResponseEntity<>("Fetching user", HttpStatus.OK);
+        return new ResponseEntity<>("Fetching user from Mongo", HttpStatus.OK);
     }
 
 }
