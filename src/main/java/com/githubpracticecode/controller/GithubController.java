@@ -10,10 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/githubcode")
 public class GithubController {
 
-    //http://localhost:8080/api/githubcode/getUser
+    //http://localhost:8081/api/githubcode/getUser
     @GetMapping("/getUser")
     public ResponseEntity<String> getUser() {
         return new ResponseEntity<>("Fetching user from Mongo", HttpStatus.OK);
+    }
+
+    //http://localhost:8081/api/githubcode/getDevelopment
+    @GetMapping("/getDevelopment")
+    public ResponseEntity<String> getDevelopment() {
+        return new ResponseEntity<>("Fetching Development from Mongo", HttpStatus.OK);
     }
 
 }
