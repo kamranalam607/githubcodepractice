@@ -21,5 +21,11 @@ public class GithubController {
     public ResponseEntity<String> getDevelopment() {
         return new ResponseEntity<>("Fetching Development from Mongo", HttpStatus.OK);
     }
+    //http://localhost:8081/api/githubcode/getFeature
+    @GetMapping("/getFeature")
+    public ResponseEntity<String> getFeature() {
+        return new ResponseEntity<>("Fetching Feature from Mongo", HttpStatus.OK);
+    }
+
 
 }
