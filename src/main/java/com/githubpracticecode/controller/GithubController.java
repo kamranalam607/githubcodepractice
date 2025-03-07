@@ -26,6 +26,9 @@ public class GithubController {
     public ResponseEntity<String> getFeature() {
         return new ResponseEntity<>("Fetching Feature from Mongo", HttpStatus.OK);
     }
-
+    @GetMapping("/getUpdatedFeature")
+    public ResponseEntity<String> getUpdatedFeature() {
+        return new ResponseEntity<>("Fetching Updated Feature from Mongo", HttpStatus.OK);
+    }
 
 }
