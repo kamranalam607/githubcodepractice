@@ -27,5 +27,9 @@ public class GithubController {
         return new ResponseEntity<>("Fetching Feature from Mongo", HttpStatus.OK);
     }
 
+    @GetMapping("/getPull")
+    public ResponseEntity<String> getPull() {
+        return new ResponseEntity<>("Fetching Pull from Mongo", HttpStatus.OK);
+    }
 
 }
